@@ -143,7 +143,6 @@
     .orbit::before { width: 14px; height: 14px; top: 42px; right: 70px; box-shadow: 0 0 0 8px color-mix(in srgb, var(--pink) 11%, transparent); }
     .orbit::after { width: 9px; height: 9px; left: 44px; bottom: 108px; }
     .phone {
-      display: block; cursor: pointer;
       position: relative; z-index: 2; width: 300px;
       transform: rotateY(-16deg) rotateX(5deg);
       transform-style: preserve-3d;
@@ -379,9 +378,9 @@
         <div class="phone-stage" aria-label="RR Music player preview">
           <div class="orbit" aria-hidden="true"></div>
           <div class="float-card one">Background play<small>Keep listening anywhere</small></div>
-          <a class="phone" href="https://github.com/shreeshortsff143/RR-MUSIC-/releases/download/v1.2.5/app-release.apk" download aria-label="Download RR Music">
-            <img class="phone-baked" src="phones/phone-nowplaying.png?v=2" alt="RR Music app on iPhone - tap to download" />
-          </a>
+          <div class="phone">
+            <img class="phone-baked" src="phones/phone-nowplaying.png?v=2" alt="RR Music app on iPhone" />
+          </div>
           <div class="float-card two"><div class="float-card two">Synced lyrics<small>Follow every line</small></div>
         </div>
       </div>
