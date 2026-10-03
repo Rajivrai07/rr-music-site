@@ -240,6 +240,13 @@
     .shot-frame img { display: block; width: 100%; height: auto; }
     .shot-cap { margin-top: 14px; text-align: center; font-weight: 800; font-size: 15px; }
     .shot-cap small { display: block; margin-top: 4px; color: var(--muted); font-weight: 600; font-size: 12px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .blog-card { display: block; padding: 30px; border-radius: 26px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--soft-shadow); text-decoration: none; transition: transform .2s; }
+    .blog-card:hover { transform: translateY(-3px); }
+    .blog-cat { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--pink); }
+    .blog-card h3 { margin: 12px 0 10px; font-size: 22px; line-height: 1.2; }
+    .blog-card p { margin: 0 0 16px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .blog-more { font-weight: 800; font-size: 14px; color: var(--purple); }
     .download-panel {
       position: relative; overflow: hidden; padding: 72px; border-radius: 18px 48px 18px 48px;
       background:
@@ -309,6 +316,7 @@
       .section-head p { font-size:16px; }
       .feature-grid { grid-template-columns:1fr; }
       .shot { flex-basis: 216px; }
+      .blog-grid { grid-template-columns: 1fr; }
       .feature, .feature:nth-child(1), .feature:nth-child(4) { grid-column:auto; min-height:240px; border-radius:26px 10px 26px 10px; }
       .feature:nth-child(1) { min-height:430px; }
       .feature-wide { grid-template-columns:1fr; }
@@ -337,6 +345,7 @@
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#experience">Experience</a>
+        <a href="#blog">Blog</a>
         <a class="nav-download" href="https://github.com/shreeshortsff143/RR-MUSIC-/releases/download/v1.2.5/app-release.apk" download>
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Download
@@ -476,6 +485,41 @@
     
 
     
+
+    <section class="blog" id="blog">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>From the blog.</h2>
+          <p>Tips, guides and music talk — RR Music ko aur behtar tareeke se use karna seekho.</p>
+        </div>
+        <div class="blog-grid">
+          <a class="blog-card" href="blog/background-play-kaise-use-kare.html">
+            <span class="blog-cat">RR Music Blog</span>
+            <h3>RR Music me Background Play kaise use karein</h3>
+            <p>Gaana chal raha ho aur aap phone me kuch aur bhi kar sako — background play ka poora fayda kaise uthayein.</p>
+            <span class="blog-more">Read more &rarr;</span>
+          </a>
+          <a class="blog-card" href="blog/perfect-playlist-banane-ke-tips.html">
+            <span class="blog-cat">RR Music Blog</span>
+            <h3>Apni Perfect Playlist Banane ke 5 Aasaan Tips</h3>
+            <p>Mood ke hisaab se playlist banana ek art hai. Ye 5 tips aapki playlist ko next level par le jayenge.</p>
+            <span class="blog-more">Read more &rarr;</span>
+          </a>
+          <a class="blog-card" href="blog/lyrics-ke-saath-gaane-sunna.html">
+            <span class="blog-cat">RR Music Blog</span>
+            <h3>Lyrics ke Saath Gaane Sunna Kyun Hai Khaas</h3>
+            <p>Jab shabd samajh aate hain, to gaana dil ko aur zyada chhoota hai. Synced lyrics ka maza lijiye.</p>
+            <span class="blog-more">Read more &rarr;</span>
+          </a>
+          <a class="blog-card" href="blog/naye-gaane-discover-karne-ke-tarike.html">
+            <span class="blog-cat">RR Music Blog</span>
+            <h3>Naye Gaane Discover Karne Ke 5 Tarike</h3>
+            <p>Roz wahi purane gaane? Naya music dhoondhne ke ye 5 tarike aapki playlist ko fresh kar denge.</p>
+            <span class="blog-more">Read more &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
     <section id="download">
       <div class="wrap">
         <div class="download-panel">
